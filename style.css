@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/muzeu.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1; /* Ensure the navbar is above other elements */
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+.navbar ul li {
+  list-style: disc;
+  display: inline-block;
+  margin: 0 20;
+  position: relative;
+  margin-right: 70px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 12px;
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #F5F4ED;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+  width: 100%;
+  color: #7D82B8;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: mix(#752020, #a3a3a3, 85%);
+  font-size: calc(1em + 20vw);
+  font-weight: 900;
+  text-shadow: 
+    -0.0075em 0.0075em 0 mix(#fff, #e91e63, 94%),
+    0.005em 0.005em 0 mix(#fff, #3edd16, 60%),
+    0.01em 0.01em 0 mix(#fff, #e91e63, 62%), 
+    0.015em 0.015em mix(#fff, #e91e63, 64%), 
+    0.02em 0.02em 0 mix(#fff, #e91e63, 66%), 
+    0.025em 0.025em 0 mix(#fff, #e91e63, 68%),
+    0.03em 0.03em 0 mix(#fff, #e91e63, 70%),
+    0.035em 0.035em 0 mix(#fff, #e91e63, 72%);
+}
